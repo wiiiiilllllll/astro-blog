@@ -1,0 +1,21 @@
+---
+import BaseLayout from "./baseLayout.astro";
+import Greeting from "../components/Greeting";
+const { frontmatter } = Astro.props;
+---
+<BaseLayout pageTitle={frontmatter.title}>
+    <section>
+        <h1>{frontmatter.heroTitle}</h1>
+        <figure><img src={frontmatter.heroImage} /></figure>
+    </section>
+    <section>
+        <h2>{frontmatter.introTitle}</h2>
+        <p>{frontmatter.introText}</p>
+    </section>
+    <section>
+        <h2>{frontmatter.gettingStartedTitle}</h2>
+        <p>{frontmatter.gettingStartedText}</p>
+    </section>
+    <slot />
+    <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari", "Hi", "Hello", "Howdy", "Hey there"]} />
+</BaseLayout>
