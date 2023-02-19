@@ -40,7 +40,6 @@ export default defineConfig({
                 delete: true,
                 fields: [
                   { name: 'title', widget: 'string', label: 'Homepage title'},
-                  { name: 'heroTitle', widget: 'string', label: 'Hero title' },
                   { name: 'heroImage', widget: 'image', label: 'Hero image' },
                   { name: 'introTitle', widget: 'string', label: 'Introduction title'},
                   { name: 'introText', widget: 'markdown', label: 'Introduction text' },

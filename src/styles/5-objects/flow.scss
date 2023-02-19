@@ -1,0 +1,13 @@
+.o-flow {
+    & > * + * {
+        margin-top: $space-m;
+    }
+}
+
+@each $label, $size in $spaces {
+    .o-flow--#{$label} {
+        & > * + * {
+            margin-top: $size;
+        }
+    }
+}

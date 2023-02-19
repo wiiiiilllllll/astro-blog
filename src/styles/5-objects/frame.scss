@@ -1,0 +1,31 @@
+$z: $space-m;
+$zz: calc(100% - $z);
+
+.o-frame {
+    position: relative;
+
+    img {
+        clip-path: polygon(
+            $z 0,
+            85% 0,
+            calc(85% + $z) $z,
+            100% $z,
+            100% $zz,
+            calc(100% - 70%) $zz,
+            calc(100% - (70% + $z)) 100%,
+            0 100%,
+            0 $z
+        );
+    }
+}
+
+.o-frame:after {
+    content: attr(data-label);
+    font-family: 'Silkscreen';
+    font-size: $font-s;
+    line-height: $space-m;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}

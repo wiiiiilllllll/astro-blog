@@ -13,15 +13,17 @@ pubDate: 2022-08-08
 author: Will
 title: Tense, tactical giant robot squad battles
 heroTitle: Tense, tactical giant robot squad battles
-introTitle: "Mobile Frame Zero: Rapid Attack"
+introTitle: Tiny giant Lego® robots battling across your tabletop!
 tags:
   - astro
   - successes
-introText: "**Mobile Frame Zero: Rapid Attack** is a game where you never have
-  enough time or material to make your plans easy. When your robots take a hit,
-  they lose vital parts! When you make a decision, you know Doomsday is coming
-  and you can’t take it back! There’s never enough cover to safely get where you
-  need to go!"
+introText: >-
+  **Mobile Frame Zero: Rapid Attack** is a tabletop wargame for 2 to 5 players.
+  Build your squad of tiny giant robots out of Lego® and fight for control of
+  the Free Colonies in the year SC 0245.
+
+
+  Reaching out from Earth and Mars towards the cosmos, the Solar Union has conquered many worlds. But when it reached the homeworld of the alien Ijad, the SU met its first real opposition. Fiercely religious, the Ijad use the invaders' own technology against them, fighting to turn back the tide of colonisation. And now, inspired by the Ijad and rising against the Solar Union are the humans of the newly-formed Free Colonies.
 image:
   url: https://docs.astro.build/default-og-image.png
   alt: The word "astro" against a space background

@@ -6,20 +6,23 @@ const { frontmatter } = Astro.props;
 <BaseLayout>
     <section class='c-section'>
         <div class='o-50/50'>
-            <figure><img src={frontmatter.heroImage} /></figure>
-            <h1>{frontmatter.heroTitle}</h1>
+            <figure class='o-frame' data-label='Micro Construct Tactics Nova'><img src={frontmatter.heroImage} /></figure>
+            <h1>{frontmatter.title}</h1>
         </div>
     </section>
     <section class='c-section'>
         <div class='o-50/50'>
-            <h2>{frontmatter.introTitle}</h2>
-            <p>{frontmatter.introText}</p>
+            <div class='o-flow--xl'>
+                <h2>{frontmatter.introTitle}</h2>
+                <p set:html={frontmatter.introText} />
+            </div>
+            <div>img</div>
         </div>
     </section>
     <section class='c-section'>
         <div class='o-50/50'>
             <h2>{frontmatter.gettingStartedTitle}</h2>
-            <p>{frontmatter.gettingStartedText}</p>
+            <p set:html={frontmatter.gettingStartedText} />
         </div>
     </section>
     <slot />
