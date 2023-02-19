@@ -1,0 +1,43 @@
+a {
+    $z: 8px;
+
+    @extend %u-px-s;
+    color: $text;
+
+    clip-path: polygon(
+        $z 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        0 $z
+    );
+
+    &:link {
+
+    }
+    &:visited {
+
+    }
+    &:hover {
+        animation: flicker .15s linear forwards;
+    }
+    &:active {
+        color: $text;
+    }
+}
+
+@keyframes flicker {
+    30% {
+        background-color: $text;
+    }
+    40% {
+        background-color: transparent;
+    }
+    80% {
+        background-color: $text;
+    }
+    100% {
+        background-color: $text;
+        color: $brand;
+    }
+}

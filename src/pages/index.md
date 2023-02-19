@@ -13,7 +13,7 @@ pubDate: 2022-08-08
 author: Will
 title: Tense, tactical giant robot squad battles
 heroTitle: Tense, tactical giant robot squad battles
-introTitle: "[description of the setting and game]"
+introTitle: "Mobile Frame Zero: Rapid Attack"
 tags:
   - astro
   - successes

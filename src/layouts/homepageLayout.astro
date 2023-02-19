@@ -3,18 +3,24 @@ import BaseLayout from "./baseLayout.astro";
 import Greeting from "../components/Greeting";
 const { frontmatter } = Astro.props;
 ---
-<BaseLayout pageTitle={frontmatter.title}>
-    <section>
-        <h1>{frontmatter.heroTitle}</h1>
-        <figure><img src={frontmatter.heroImage} /></figure>
+<BaseLayout>
+    <section class='c-section'>
+        <div class='o-50/50'>
+            <figure><img src={frontmatter.heroImage} /></figure>
+            <h1>{frontmatter.heroTitle}</h1>
+        </div>
     </section>
-    <section>
-        <h2>{frontmatter.introTitle}</h2>
-        <p>{frontmatter.introText}</p>
+    <section class='c-section'>
+        <div class='o-50/50'>
+            <h2>{frontmatter.introTitle}</h2>
+            <p>{frontmatter.introText}</p>
+        </div>
     </section>
-    <section>
-        <h2>{frontmatter.gettingStartedTitle}</h2>
-        <p>{frontmatter.gettingStartedText}</p>
+    <section class='c-section'>
+        <div class='o-50/50'>
+            <h2>{frontmatter.gettingStartedTitle}</h2>
+            <p>{frontmatter.gettingStartedText}</p>
+        </div>
     </section>
     <slot />
     <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari", "Hi", "Hello", "Howdy", "Hey there"]} />

@@ -1,0 +1,9 @@
+.c-section {
+    display: flex;
+    min-height: 100vh;
+
+    & > * {
+        @include wrap($width-m);
+        margin: auto;
+    }
+}

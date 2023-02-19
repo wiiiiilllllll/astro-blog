@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Turret+Road:wght@800&display=swap');
+
+@each $label, $size in $fontSizes {
+    %font-#{$label} {
+        font-size: $size;
+        line-height: calc(150% - $size / 2);
+    }
+
+    .u-font-#{$label} {
+        @extend %font-#{$label}
+    }
+}

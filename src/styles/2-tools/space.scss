@@ -1,0 +1,20 @@
+@each $label, $size in $spaces {
+    %u-p-#{$label} {
+        padding: $size;
+    }
+    %u-px-#{$label} {
+        padding-inline: $size;
+    }
+    %u-py-#{$label} {
+        padding-block: $size;
+    }
+    %u-m-#{$label} {
+        padding: $size;
+    }
+    %u-mx-#{$label} {
+        padding-inline: $size;
+    }
+    %u-my-#{$label} {
+        padding-block: $size;
+    }
+}

@@ -1,0 +1,13 @@
+%u-split {
+    display: flex;
+    justify-content: space-between;
+}
+
+.u-split {
+    @extend %u-split;
+}
+
+.u-split--v {
+    @extend %u-split;
+    flex-direction: column;
+}

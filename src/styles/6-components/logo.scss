@@ -1,0 +1,30 @@
+$z: 28px;
+
+.c-logo {
+    @extend %u-p-m;
+    
+    background-color: $text;
+    color: $brand;
+    display: inline-block;
+    font-family: 'Turret Road';
+    line-height: .84;
+    text-decoration: none;
+    text-transform: uppercase;;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        $z 100%,
+        0 calc(100% - $z)
+    );
+
+
+    &:hover {
+        animation: none !important;
+    }
+}

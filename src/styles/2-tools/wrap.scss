@@ -1,0 +1,9 @@
+@mixin wrap($width:45em) {
+    max-width: $width;
+}
+
+@each $label, $width in $widths {
+    .wrap-#{$width} {
+        @include wrap($width);
+    }
+}

@@ -1,0 +1,22 @@
+.c-header {
+    
+    border-left: 1px solid $text;
+    position: fixed;
+    right: 0;
+    height: 100%;
+}
+
+.c-header__nav {
+    height: 100vh;
+}
+
+.c-header__links {
+    display: flex;
+    margin-top: 87px;
+    writing-mode: vertical-rl;
+    
+    a {
+        @extend %u-p-l;
+        display: inline-block;
+    }
+}

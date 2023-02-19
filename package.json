@@ -16,5 +16,11 @@
     "astro": "^2.0.6",
     "astro-netlify-cms": "^0.5.3",
     "preact": "^10.12.1"
+  },
+  "devDependencies": {
+    "sass": "^1.58.3",
+    "stylelint": "^15.1.0",
+    "stylelint-config-recommended-scss": "^9.0.1",
+    "stylelint-config-standard": "^30.0.1"
   }
 }
