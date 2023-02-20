@@ -14,12 +14,14 @@ $spaces: (
     m: 16px,
     l: 24px,
     xl: 32px,
-    2xl: 64px
+    xxl: 64px,
+    xxxl: 80px,
 );
 
-$space-xs: 4px;
-$space-s: 8px;
-$space-m: 16px;
-$space-l: 24px;
-$space-xl: 32px;
-$space-2xl: 64px;
+$space-xs: map-get($spaces, 'xs');
+$space-s: map-get($spaces, 's');
+$space-m: map-get($spaces, 'm');
+$space-l: map-get($spaces, 'l');
+$space-xl: map-get($spaces, 'xl');
+$space-xxl: map-get($spaces, 'xxl');
+$space-xxxl: map-get($spaces, 'xxxl');

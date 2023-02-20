@@ -1,17 +1,17 @@
 $fontSizes: (
-    2xs: 4px,
-    xs: 8px,
+    xxs: 4px,
+    xs: 12px,
     s: 16px,
     m: 22px,
     l: 48px,
     xl: 64px,
-    2xl: 80px
+    xxl: 80px
 );
 
-$font-2xs: 4px;
-$font-xs: 8px;
-$font-s: 16px;
-$font-m: 22px;
-$font-l: 48px;
-$font-xl: 64px;
-$font-2xl: 80px;
+$font-xxs:  map-get($fontSizes, 'xxs');
+$font-xs:   map-get($fontSizes, 'xs');
+$font-s:    map-get($fontSizes, 's');
+$font-m:    map-get($fontSizes, 'm');
+$font-l:    map-get($fontSizes, 'l');
+$font-xl:   map-get($fontSizes, 'xl');
+$font-xxl:  map-get($fontSizes, 'xxl');

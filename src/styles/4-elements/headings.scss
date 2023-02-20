@@ -4,12 +4,17 @@ h3,
 h4 {
     font-family: 'Turret Road';
     line-height: 100%;
+    font-kerning: none;
 }
 
 h1 {
-    font-size: $font-2xl;
+    font-size: $font-xxl;
 }
 
 h2 {
     font-size: $font-xl;
+}
+
+h3 {
+    font-size: $font-l;
 }

@@ -1,8 +1,23 @@
 body {
+    animation: bgm 5s linear infinite;
     background-color: $brand;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ff6347' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     color: $text;
     font-family: 'JetBrains Mono', monospace;
     font-size: $font-m;
     line-height: 150%;
+}
+
+@keyframes bgm {
+    0% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: -1%;
+    }
+}
+
+::selection {
+    background-color: $text;
+    color: $brand;
 }

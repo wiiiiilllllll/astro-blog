@@ -1,9 +1,14 @@
 .c-section {
     display: flex;
     min-height: 100vh;
+    // padding-block: 30vh;
 
     & > * {
         @include wrap($width-m);
         margin: auto;
+    }
+
+    & + & {
+        margin-top: $space-xxxl;
     }
 }

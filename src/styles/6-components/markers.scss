@@ -1,0 +1,53 @@
+.trackX {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    right: 81px;
+    border: 1px solid;
+    height: 0.5em;
+    border-width: 0 0 1px 1px;
+}
+
+.markerX {
+    --x: 50%;
+    height: 0.5rem;
+    border-left: 1px solid;
+    font-size: 6px;
+    padding-left: 0.5em;
+    transform: translateX(calc(var(--x) - 1rem));
+    transition: transform 1.2s ease;
+    white-space: nowrap;
+
+    &:before {
+        content: "X: ";
+    }
+}
+
+.trackY {
+    position: fixed;
+    top: 1em;
+    right: 81px;
+    bottom: 1rem;
+    border-right: 1px solid;
+}
+
+.markerY {
+    --y: 50%;
+    width: 0.5rem;
+    border-top: 1px solid;
+    font-size: 6px;
+    padding-top: 0.5em;
+    transform: translateY(calc(var(--y) - 1rem));
+    transition: transform 0.8s ease;
+    white-space: nowrap;
+
+    &:before {
+        content: "Y: ";
+    }
+}
+
+.trackX,
+.trackY {
+    opacity: 0.5;
+    z-index: -1;
+}
